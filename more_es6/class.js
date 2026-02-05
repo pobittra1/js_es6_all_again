@@ -36,5 +36,9 @@ const secondMember = new Members("kiri", 19);
 //kiri = name, 19 = age. thoose are printed/created object directly when access the class.
 console.log(secondMember);
 
+//use of instanceOf
+console.log(secondMember instanceof Members);
+//that's mean is secondMember is a valid structure of Members class.
+
 
 //last question------why i can't access a method when it store in a constructor of an class?
