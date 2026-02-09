@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todos</title>
+
+    <!-- fontawesome link here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+    /* todos container */
+    #todosContainer {
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 0 15px;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* stacked todos */
+        gap: 15px;
+        /* spacing between todos */
+    }
+
+    /* individual todo card */
+    .todoCard {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        background-color: #f9f9f9;
+        padding: 12px 18px;
+        border-radius: 10px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    /* hover effect */
+    .todoCard:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    /* completed status */
+    .isCompleted {
+        font-size: 20px;
+        color: green;
+        /* true completed */
+    }
+
+    /* if not completed, gray icon */
+    .isCompleted:empty {
+        color: #ccc;
+    }
+
+    /* todo title */
+    .todoTitle {
+        font-size: 16px;
+        color: #222;
+        word-break: break-word;
+        /* long titles wrap nicely */
+    }
+
+    #loadTodos {
+        display: block;
+        margin: 30px auto;
+        padding: 12px 28px;
+
+        background-color: #222;
+        /* dark background */
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    /* hover effect */
+    #loadTodos:hover {
+        background-color: #444;
+        transform: translateY(-2px);
+    }
+
+    /* active/click effect */
+    #loadTodos:active {
+        transform: scale(0.97);
+    }
+
+    /* disabled state */
+    #loadTodos:disabled {
+        background-color: #999;
+        cursor: not-allowed;
+    }
+</style>
+
+<body>
+
+    <!-- load todos -->
+    <button onclick="loadTodos()" id="loadTodos">click here to load todos</button>
+
+    <div id="todosContainer">
+
+        <!-- its a demo card -->
+        <!-- <div class="todoCard">
+            <p class="isCompleted"></p>
+            <h2 class="todoTitle"></h2>
+        </div> -->
+    </div>
+
+
+
+
+    <script src="./todo.js"></script>
+</body>
+
+</html>
