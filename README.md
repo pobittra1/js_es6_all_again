@@ -33,6 +33,7 @@ Here, I am not only studying JavaScript concepts but also **implementing them wi
 - this keyword
 - Classes & Constructors
 - api
+- about chrome networking tab
 - More coming soon...
 
 ---
