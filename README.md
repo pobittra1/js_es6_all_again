@@ -32,7 +32,7 @@ Here, I am not only studying JavaScript concepts but also **implementing them wi
 - JSON
 - this keyword
 - Classes & Constructors
-- Error Handling
+- api
 - More coming soon...
 
 ---
