@@ -9,9 +9,14 @@ const loadComments = async () => {
 }
 
 const displayComments = (comments) => {
+    //get the comments box/body for display on ui
+    const commentBox = document.getElementById("comments-box");
+    //create html elm comments card
+    const commentCard = document.createElement("div");
+    commentCard.classList.add("comment-card");
     //loop every single data to view it on console
     comments.forEach(comment => {
-        console.log(comment);
+
     });
 }
 
