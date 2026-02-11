@@ -16,6 +16,7 @@ const displayComments = (comments) => {
     commentCard.classList.add("comment-card");
     //loop every single data to view it on console
     comments.forEach(comment => {
+        console.log(comment);
 
     });
 }
